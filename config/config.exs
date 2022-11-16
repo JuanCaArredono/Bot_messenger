@@ -9,6 +9,8 @@ use Mix.Config
 
 config :elixirbot,
   facebook_chat_bot: %{
+    message_url: "me/messages",
+    api_version: "v14.0",
     base_url: "https://graph.facebook.com",
     page_access_token: System.get_env("FACEBOOK_PAGE_ACCESS_TOKEN"),
     webhook_verify_token: System.get_env("FACEBOOK_WEBHOOK_VERIFY_TOKEN")
